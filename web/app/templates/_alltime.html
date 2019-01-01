@@ -5,14 +5,18 @@
     <thead>
       <th>Name</th>
       <th>Goals</th>
+      <th>Seasons Played</th>
+      <th>Goals / Season</th>
       <th>League Titles</th>
       <th>Championships</th>
     </thead>
     <tbody>
       {{#each playerStatistics}}
         <tr>
-          <td>{{name}}</td>
+          <td role="player">{{name}}</td>
           <td>{{goals}}</td>
+          <td>{{seasonsPlayed}}</td>
+          <td>{{goalsPerSeason}}</td>
           <td>{{leagueWinner}}</td>
           <td>{{playoffWinner}}</td>
         </tr>
@@ -29,7 +33,7 @@
         <tbody>
           {{#each goalieStatistics}}
             <tr>
-              <td>{{name}}</td>
+              <td role="player">{{name}}</td>
               <td>{{shutouts}}</td>
             </tr>
           {{/each}}
